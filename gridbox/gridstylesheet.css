@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: 50px 200px auto 50px; 
+}
+
+.grid-container header{
+    background-color: AliceBlue;
+    /*grid-column-start: 1;
+    grid-column-end: 5;*/
+    grid-column: 1 / 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    
+}
+
+header img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+header nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    text-decoration: none;
+    width:30%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.slogan{
+
+    grid-column: 1 / 5;
+    text-align: center;
+    justify-self:center ;
+    align-self: center;
+    
+}
+
+.grid-container main{
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.recipe-card{
+    width: 90%;
+    border-radius: 8px;
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content:centre;
+    align-self: center;
+    justify-self: center;
+    gap:20px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+.recipe-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-title h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: center;
+    align-self: center;
+   
+}
+
+.recipe-card p{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px;
+    text-align: justify;
+}
+
+.recipe-card .btn{
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}   
+
+.grid-container aside{
+    display: flex;
+    text-align: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 15px;
+    padding: 20%;
+    
+}
+
+.aside h1{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px; 
+    text-align: center;
+    padding-bottom: 20%;
+    
+}
+.aside p{
+    text-align: justify;
+    font-size: 16px;
+    padding: 12%; 
+}
+
+.imagepane img{
+    width: 100%;
+    align-self: center;
+    object-fit: cover;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 10%;
+}
+
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20%;
+    }
+
+.social a{
+    color: orange;
+    text-decoration: none;
+    }
+
+.grid-container footer{
+    grid-column: 1 / 5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+    
+}
