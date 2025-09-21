@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
     <script src="https://kit.fontawesome.com/2e7b56bb1b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="gridstylesheet.css">
@@ -10,6 +11,12 @@
 <body>
     <div class = grid-container>
         <header>
+
+        <!-- Hamburger menu toggle -->
+         <input type="checkbox" id="menu-toggle">
+         <label for="menu-toggle" class="hamburger">
+         <i class="fas fa-bars"></i>
+         </label>
             
             <img src = "./assests/logo.png" alt = "Beit Logo"/>
             <nav>
@@ -17,9 +24,8 @@
                 <a href="#">Blog</a>            
                 <a href="#">About</a>
             </nav>
-
-            
         </header>
+
         <div class = "slogan" >
             <h1>INSANELY EASY <br>WEEKNIGHT DINNERS</h1>
         </div>
@@ -97,25 +103,20 @@
 
             </div>
         </main>
-        <div class = "aside">
+        <aside>
             <h1> About Me </h1> 
-                 <div class = "imagepane">
                 <img src = "./assests/yasmin.jpg" alt = "Picture of Me"/>
-            </div>
-                <p class = "aside" > Hi! I'm Yasmin, a food enthusiast and home cook who loves sharing easy and delicious recipes for busy weeknights. When I'm not in the kitchen, you can find me exploring new cuisines, experimenting with flavors, or enjoying a good book. Join me on this culinary journey as we whip up some insanely easy weeknight dinners together!
+                <p class = "aside"> Hi! I'm Yasmin, a food enthusiast and home cook who loves sharing easy and delicious recipes for busy weeknights. When I'm not in the kitchen, you can find me exploring new cuisines, experimenting with flavors, or enjoying a good book. Join me on this culinary journey as we whip up some insanely easy weeknight dinners together!
                 </p>
-                    <div class = "social">
+                <div class = "social-container">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-pinterest"></i></a>
                     <a href="#"><i class="fa-brands fa-x"></i></a>
-                    </div>
-                           
-                </div>                  
-        </aside>
+                    </div> 
+            </aside>
         <footer>
             <p>Copyright &copy; 2024 Beit Kitchen</p>
-            <p>Designed by Yasmin</p>
         </footer>
     </div>  
 </body>
