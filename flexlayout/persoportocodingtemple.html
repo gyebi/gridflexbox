@@ -1,66 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="portoct.css" class="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="portoct.css" class="stylesheet" />
 </head>
+
 <body>
-    <div class = "main-container">
-      <nav class = "navbar" > 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    <section class="hero">
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav nav-pills me-1 mb-4 mb-lg-4">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section id="about" class="hero">
     <h1>Welcome to My Portfolio</h1>
     <p>Hello! I'm a web developer passionate about building beautiful and functional websites.</p>
-    <img class="hero-image" src="/assests/gyebi.jpeg" alt="android phone">
-    </section>
+    <img src="/assests/gyebi.jpeg" class="img-fluid" alt="android phone">
+  </section>
 
-  <section class="portfolio"> 
+  <section id="projects" class="portfolio">
     <h2>My Projects</h2>
 
-    <div class = "card-container">
+    <div class="card-container">
 
-        <div class = "card">
-         <img src = "/assests/android.jpg" alt = "android">
-         <div class ="card-content">
-            <h3> Android Projects</h3>
-            <p>This is description of some my projects. Similar project scan be replicated for clients if they so wish</p>
-         </div>
-         </div>
-
-        <div class = "card">
-        <img src="/assests/data analytics.jpg" alt = "data analytics">
-         <div class ="card-content">
-            <h3>Data Analytics</h3>
-            <p>This is description of some my projects. Similar project scan be replicated for clients if they so wish</p>
-         </div>
+      <div class="card">
+        <img src="/assests/android.jpg" alt="android">
+        <div class="card-content">
+          <h3> Android Projects</h3>
+          <p>This is description of some my projects. Similar project scan be replicated for clients if they so wish
+          </p>
         </div>
+      </div>
 
-        <div class = "card">
-        <img src="/assests/robotics.jpg" alt = "robotics & arduino">
-         <div class ="card-content">
-            <h3> Robotics & AI </h3>
-            <p>This is description of some my projects. Similar project scan be replicated for clients if they so wish</p>
-         </div>
+      <div class="card">
+        <img src="/assests/data analytics.jpg" alt="data analytics">
+        <div class="card-content">
+          <h3>Data Analytics</h3>
+          <p>This is description of some my projects. Similar project scan be replicated for clients if they so wish
+          </p>
         </div>
+      </div>
+
+      <div class="card">
+        <img src="/assests/robotics.jpg" alt="robotics & arduino">
+        <div class="card-content">
+          <h3> Robotics & AI </h3>
+          <p>This is description of some my projects. Similar project scan be replicated for clients if they so wish
+          </p>
+        </div>
+      </div>
 
     </div>
-    </section>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-form-ini">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="form-floating">
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+          <label for="floatingTextarea">Comments</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg mt-4 w-30">Submit</button>
+      </form>
     </div>
-  <footer class = "footer">
+
+    <div id="images" class="picture-section">
+      <img src="/assests/software dev.jpg" alt="software" />
+    </div>
+  </section>
+
+
+  <footer class="footer">
     <ul>
-        <li><a href ='#'>Privacy Policy</a></li>
-        <li><a href ='#'>Terms of Use</a></li>
-        <li><a href ='#'>Contact Us</a></li>
+      <li><a href='#'>Privacy Policy</a></li>
+      <li><a href='#'>Terms of Use</a></li>
+      <li><a href='#'>Contact Us</a></li>
     </ul>
     <p>2025 My Portfolio. All Rights Reserved</p>
-    </footer>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
